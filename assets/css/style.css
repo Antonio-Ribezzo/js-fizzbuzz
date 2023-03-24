@@ -1,0 +1,19 @@
+main{
+    background-color: #083b4c;
+    overflow: auto;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.rectangle{
+    flex-basis: calc(90% / 7);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+}
