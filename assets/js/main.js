@@ -11,33 +11,23 @@ Per sapere se un numero è divisibile per un altro utilizzo la % per estrarre il
 */
 
 for(let n=1; n <= 100; n++){
+    // create element into DOM
+    let n1 = document.createElement("span");
+
     if( n % 3 == 0 && n % 5 == 0){
-        // create element into DOM
-        let n1 = document.createElement("span");
         n1.className = "rectangle bg-danger"
         n1.innerHTML = "FizzBuzz";
-        // append to html
-        document.getElementById("rigaNumber").appendChild(n1);
     } else if(n % 3 == 0){
-         // create element into DOM
-        let n1 = document.createElement("span");
         n1.className = "rectangle bg-success"
         n1.innerHTML = "Fizz";
-        // append to html
-        document.getElementById("rigaNumber").appendChild(n1);
     } else if(n % 5 == 0){
-         // create element into DOM
-        let n1 = document.createElement("span");
         n1.className = "rectangle bg-warning"
         n1.innerHTML = "Buzz";
-        // append to html
-        document.getElementById("rigaNumber").appendChild(n1);
     } else{
-        // create element into DOM
-        let n1 = document.createElement("span");
         n1.className = "rectangle bg-primary"
         n1.innerHTML = `${n}`;
-        // append to html
-        document.getElementById("rigaNumber").appendChild(n1);
     }
+
+    // append to html
+    document.getElementById("rigaNumber").appendChild(n1);
 }
